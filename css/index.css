@@ -79,6 +79,7 @@ footer div{
 
 .img-pro:hover{
     transform: scale(1.05);
+    border: solid 1px black;
 }
 
 .img-content{
