@@ -7,11 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.contaienr{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+body{
     background: #fafafa;
 }
 
@@ -20,7 +16,7 @@
 main{
     width: auto;
     height: 100%;
-    min-height: calc(100vh - 153px);
+    min-height: calc(100vh - 189px);
 
     margin: 1em;
 }
@@ -62,6 +58,7 @@ footer div{
 
     margin-left: 2em;
     margin-top: 2em;
+    border-radius: 10px;
 }
 
 #img-time-track{
@@ -69,6 +66,7 @@ footer div{
     height: 70%;
 
     margin-top: 2em;
+    border-radius: 10px;
 }
 
 #img-commerce{
@@ -76,10 +74,11 @@ footer div{
     height: 80%;
 
     margin-top: 2em;
+    border-radius: 10px;
 }
 
 .img-pro:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .img-content{

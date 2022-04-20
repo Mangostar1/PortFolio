@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="contaienr">
         <header>
-            <nav class="nav">
+            <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-list"><a href="./index.html" class="nav-link">Inicio</a></li>
                     <li class="nav-list"><a href="#" class="nav-link">Ejercicios</a>
@@ -33,12 +33,24 @@
         </header>
         <main>
             <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bienvenido</h5>
+                                    <p class="card-text">
+                                        En esta pagina podras encontrar todos los retos que he realizado de la pagina frontend Mentor.
+                                    </p>
+                                    <a href="https://github.com/Mangostar1/Frontend_mentor" class="btn btn-primary">Repositorio Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
                 <article>
-                    <h1>Bienvenido a mi pagina de prueba</h1>
-                    <p>
-                        En esta página están alojados todos los retos que he realizado de la página frontend mentor con el fin de poder tenerlos todos en un solo repositorio de manera ordenada.
-                    </p>
-
                     <h2>Ejercicios Realizados hasta ahora:</h2>
                     <div class="works-content">
                         <a href="nft-preview-card-component-main/proyect_1.html">
@@ -54,6 +66,7 @@
                 </article>
             </section>
         </main>
+
         <footer>
             <div>
                 <a id="personalLink" class="personalLinks" href="https://github.com/Mangostar1" target="_blank">
@@ -71,6 +84,5 @@
                 </a>
             </div>
         </footer>
-    </div>
 </body>
 </html>
