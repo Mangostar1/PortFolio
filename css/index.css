@@ -76,6 +76,13 @@ footer div{
     margin-top: 2em;
     border-radius: 10px;
 }
+#img-ipSearch{
+    width: 80%;
+    height: 80%;
+
+    margin-top: 2em;
+    border-radius: 10px;
+}
 
 .img-pro:hover{
     transform: scale(1.05);
