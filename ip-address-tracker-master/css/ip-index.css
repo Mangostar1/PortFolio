@@ -99,7 +99,7 @@ h1{
 /* map */
 
 #map{
-    height: 645px;
+    height: 635px;
     width: 100%;
 
     margin-top: -130px;
@@ -109,7 +109,21 @@ h1{
 .attribution { 
     font-size: 11px;
     text-align: center;
+    background-color: tomato;
+
+    height: 34px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
+}
+
+.inicio{
+    margin-right: 5em;
+}
+.inicio:hover{
+    color: black;
 }

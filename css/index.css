@@ -59,22 +59,23 @@ footer div{
     margin-left: 2em;
     margin-top: 2em;
     border-radius: 10px;
+    transition: all .4s ease;
 }
-
 #img-time-track{
     width: 70%;
     height: 70%;
 
     margin-top: 2em;
     border-radius: 10px;
+    transition: all .4s ease;
 }
-
 #img-commerce{
     width: 80%;
     height: 80%;
 
     margin-top: 2em;
     border-radius: 10px;
+    transition: all .4s ease;
 }
 #img-ipSearch{
     width: 80%;
@@ -82,6 +83,7 @@ footer div{
 
     margin-top: 2em;
     border-radius: 10px;
+    transition: all .4s ease;
 }
 
 .img-pro:hover{
