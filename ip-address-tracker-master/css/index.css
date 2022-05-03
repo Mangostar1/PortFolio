@@ -1,0 +1,115 @@
+:root{
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+
+    background-image: url('/images/pattern-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    
+    padding-top: 50px;
+}
+
+#ipSearch{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    margin-left: 40%;
+    margin-top: 50px;
+    padding: 1em;
+}
+
+#btn-ip{
+    background-image: url('/images/icon-arrow.svg');
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -4px;
+}
+
+#geoSection{
+    background-color: aliceblue;
+
+    width: 60%;
+    height: 130px;
+    margin-left: 25%;
+    border-radius: 12px;
+
+    position: relative;
+    top: -50px;
+    z-index: 500;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleDate{
+    color: rgb(124, 124, 124);
+    text-align: center;
+}
+
+.geo{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+
+    margin-top: 10px;
+}
+
+#geoSection div{    
+    width: 100%;
+    height: 60%;
+
+    border-left: 1px solid black;
+}
+#geoSection div:first-child{
+    border-left: none;
+}
+
+/* map */
+
+#map{
+    height: 645px;
+    width: 100%;
+
+    margin-top: -130px;
+}
+
+/* creditos */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
