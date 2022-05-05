@@ -53,8 +53,7 @@ footer div{
 /* main content */
 
 #img-nft{
-    width: 50%;
-    height: 50%;
+    width: 300px;
 
     margin-left: 2em;
     margin-top: 2em;
@@ -62,24 +61,21 @@ footer div{
     transition: all .4s ease;
 }
 #img-time-track{
-    width: 70%;
-    height: 70%;
+    width: 400px;
 
     margin-top: 2em;
     border-radius: 10px;
     transition: all .4s ease;
 }
 #img-commerce{
-    width: 80%;
-    height: 80%;
+    width: 500px;
 
     margin-top: 2em;
     border-radius: 10px;
     transition: all .4s ease;
 }
 #img-ipSearch{
-    width: 80%;
-    height: 80%;
+    width: 500px;
 
     margin-top: 2em;
     border-radius: 10px;
@@ -96,13 +92,12 @@ footer div{
 }
 
 .works-content{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    gap: 1em;
-
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
 
+    gap: 2em;
     margin-top: 2em;
 }
 
