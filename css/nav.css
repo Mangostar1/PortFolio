@@ -40,3 +40,7 @@ li{
 nav ul li:hover ul{
     display: block;
 }
+
+.img-logo {
+    width: 150px;
+}
