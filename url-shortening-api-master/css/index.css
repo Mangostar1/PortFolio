@@ -10,6 +10,27 @@ body {
   font-size: 18px;
 }
 
+header {
+  display: flex;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(158, 154, 167);
+}
+header nav ul li a:hover {
+  color: rgb(59, 48, 84);
+  font-weight: bold;
+}
+
 .middle-content {
   background-color: rgb(191, 191, 191);
 }

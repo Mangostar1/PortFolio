@@ -5,7 +5,10 @@ $neutral-Gray: rgb(191, 191, 191)
 $neutral-GrayishV: rgb(158, 154, 167)
 $neutral-DarkB: rgb(53, 50, 62)
 $neutral-DarkV: rgb(35, 33, 39)
-    
+$black: rgb(0, 0, 0)
+$white: rgb(255, 255, 255)
+
+
 *
     box-sizing: border-box
     margin: 0
@@ -15,6 +18,24 @@ $neutral-DarkV: rgb(35, 33, 39)
 
 body
     font-size: 18px
+
+header
+    display: flex
+
+    nav
+        display: flex
+
+        ul
+            display: flex
+            gap: 1em
+            align-items: center
+            list-style: none
+            li a
+                text-decoration: none
+                color: $neutral-GrayishV
+                &:hover
+                    color: $primary-2
+                    font-weight: bold
 
 .middle-content
     background-color: $neutral-Gray
