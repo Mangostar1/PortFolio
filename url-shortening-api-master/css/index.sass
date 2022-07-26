@@ -49,6 +49,7 @@ header
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: 1fr
+    padding-bottom: 8rem
     .first-text
         margin-top: 9rem
     h1
@@ -82,21 +83,31 @@ header
 
 .middle-content
     background-color: $neutral-Gray
+    position: relative
     .middle-form
         display: flex
         justify-content: center
+        background-image: url('./../images/bg-shorten-desktop.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
         background-color: $primary-2
-        margin: 0 7.5rem 0 7.5rem
-        padding: 1.5rem 3rem 1.5rem 3rem
+        margin: 0 9rem 0 9rem
+        padding: 2.8rem 3rem 2.8rem 3rem
         border-radius: 8px
+        position: absolute
+        top: -4.5rem
+        left: 0
         .middle-form-text
-            padding: .5rem 8rem
+            padding: 1rem 38rem 1rem 2rem
+            border-radius: 6px
+            border: none
         .middle-form-button
             background-color: $primary-1
             color: $white
             padding: 0.4rem 1rem
             margin-left: 1rem
-            border-radius: 5px
+            border-radius: 6px
             border: none
             font-size: 1.1rem
             &:hover

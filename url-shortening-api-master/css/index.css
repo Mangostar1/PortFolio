@@ -46,6 +46,7 @@ header nav ul .sign-up {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  padding-bottom: 8rem;
 }
 .first-content .first-text {
   margin-top: 9rem;
@@ -87,24 +88,34 @@ header nav ul .sign-up {
 
 .middle-content {
   background-color: rgb(191, 191, 191);
+  position: relative;
 }
 .middle-content .middle-form {
   display: flex;
   justify-content: center;
+  background-image: url("./../images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: rgb(59, 48, 84);
-  margin: 0 7.5rem 0 7.5rem;
-  padding: 1.5rem 3rem 1.5rem 3rem;
+  margin: 0 9rem 0 9rem;
+  padding: 2.8rem 3rem 2.8rem 3rem;
   border-radius: 8px;
+  position: absolute;
+  top: -4.5rem;
+  left: 0;
 }
 .middle-content .middle-form .middle-form-text {
-  padding: 0.5rem 8rem;
+  padding: 1rem 38rem 1rem 2rem;
+  border-radius: 6px;
+  border: none;
 }
 .middle-content .middle-form .middle-form-button {
   background-color: rgb(42, 207, 207);
   color: rgb(255, 255, 255);
   padding: 0.4rem 1rem;
   margin-left: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
   font-size: 1.1rem;
 }
