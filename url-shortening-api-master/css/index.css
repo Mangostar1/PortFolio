@@ -123,6 +123,44 @@ header nav ul .sign-up {
   background-color: rgb(59, 48, 84);
   cursor: pointer;
 }
+.middle-content h2 {
+  text-align: center;
+  padding-top: 10rem;
+}
+.middle-content p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-top: 0.8rem;
+  font-size: 1rem;
+}
+.middle-content .middle-info {
+  margin: 2rem 9rem 0 9rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  position: relative;
+}
+.middle-content .middle-info .line {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  border: 8px solid rgb(0, 0, 0);
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+}
+.middle-content .middle-info .article-info {
+  background-color: rgb(255, 255, 255);
+  padding: 5rem 1.5rem 2rem 1.5rem;
+  z-index: 2;
+}
+.middle-content .middle-info .article-info p {
+  text-align: left;
+  color: rgb(53, 50, 62);
+  font-size: 1rem;
+}
 
 .ft-section {
   background-color: rgb(59, 48, 84);
