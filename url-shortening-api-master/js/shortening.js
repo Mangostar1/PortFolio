@@ -21,16 +21,15 @@ async function fetchApi() {
             </p>
         </div>
         <div class="linkShort">
-            <p>
+            <p id="shorten">
                 ${data.result.full_short_link}
             </p>
-            <button class="btn-copy">Copy</button>
+            <button id="btn-copy" class="btn-copy">Copy</button>
         </div>`;
         divForm.appendChild(newDiv);
     }
     NewDiv();
 }
-
 
 //event listener
 document.addEventListener('click', (e) => {
@@ -40,5 +39,11 @@ document.addEventListener('click', (e) => {
         } else {
             fetchApi();
         }
+    }
+    if (e.target.matches('.btn-copy')) {
+        let shorten = document.getElementById("shorten").innerText;
+        navigator.clipboard.writeText(shorten);
+        document.getElementById('btn-copy').innerText = "Copied!";
+        document.getElementById('btn-copy').style.backgroundColor = "hsl(257, 27%, 26%)";
     }
 });
