@@ -98,12 +98,12 @@ header nav ul .sign-up {
   background-position: center;
   background-size: cover;
   background-color: rgb(59, 48, 84);
-  margin: 0 9rem 0 9rem;
   padding: 2.8rem 3rem 2.8rem 3rem;
   border-radius: 8px;
   position: absolute;
   top: -4.5rem;
-  left: 0;
+  left: 20%;
+  right: 20%;
 }
 .middle-content .middle-form .middle-form-text {
   padding: 1rem 38rem 1rem 2rem;
@@ -134,7 +134,7 @@ header nav ul .sign-up {
   font-size: 1rem;
 }
 .middle-content .middle-info {
-  margin: 2rem 9rem 0 9rem;
+  margin: 10rem 9rem 0 9rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -146,7 +146,7 @@ header nav ul .sign-up {
   display: flex;
   width: 100%;
   height: 1px;
-  border: 8px solid rgb(0, 0, 0);
+  border: 5px solid rgb(42, 207, 207);
   position: absolute;
   top: 35%;
   z-index: 1;
@@ -154,7 +154,23 @@ header nav ul .sign-up {
 .middle-content .middle-info .article-info {
   background-color: rgb(255, 255, 255);
   padding: 5rem 1.5rem 2rem 1.5rem;
+  position: relative;
   z-index: 2;
+}
+.middle-content .middle-info .article-info .div-img-info {
+  background-color: rgb(59, 48, 84);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.5rem;
+  left: 5%;
+}
+.middle-content .middle-info .article-info .div-img-info .img-info {
+  padding: 1rem 1rem;
+}
+.middle-content .middle-info .article-info .div-img-info .img-one, .middle-content .middle-info .article-info .div-img-info .img-two {
+  padding: 1.2rem 1.15rem;
 }
 .middle-content .middle-info .article-info p {
   text-align: left;
@@ -162,8 +178,33 @@ header nav ul .sign-up {
   font-size: 1rem;
 }
 
-.ft-section {
+.foot-section {
   background-color: rgb(59, 48, 84);
+  background-image: url("./../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0 2rem 0;
+  height: 15rem;
+}
+.foot-section h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.foot-section button {
+  background-color: rgb(42, 207, 207);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin: 1.5rem 45% 0 45%;
+}
+.foot-section button:hover {
+  background-color: rgb(59, 48, 84);
+  cursor: pointer;
 }
 
 footer {
