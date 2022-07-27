@@ -3,6 +3,8 @@ let inputText = document.getElementById("input-text");
 let errorLink = document.getElementById("error-link");
 
 //to display
+let padding = '160'; //160px
+let numDina = 0;
 
 async function fetchApi() {
     let url = inputText.value;
@@ -38,6 +40,9 @@ document.addEventListener('click', (e) => {
             errorLink.style.opacity = "1";
         } else {
             fetchApi();
+            numDina += 60;
+            padding = Number(padding) + numDina;
+            document.getElementById('h2-advanced').style.paddingTop = padding + 'px';
         }
     }
     if (e.target.matches('.btn-copy')) {

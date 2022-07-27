@@ -301,6 +301,10 @@ footer .social-icons {
   display: flex;
   gap: 1.5rem;
 }
+footer .social-icons img:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(92%) sepia(60%) saturate(5159%) hue-rotate(123deg) brightness(88%) contrast(83%);
+}
 
 .attribution {
   background-color: #ffffff;
