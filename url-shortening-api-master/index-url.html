@@ -50,10 +50,13 @@
     </section>
 
     <section class="middle-content">
-      <form class="middle-form">
-        <input class="middle-form-text" type="text" name="link-short" id="link-short" placeholder="Shorten a link here...">
-        <input class="middle-form-button" type="button" value="Shorten It!">
-      </form>
+      <div class="div-middle-form"> <!-- a este div se le agregan los links acortados -->
+        <form class="middle-form">
+          <input id="input-text" class="middle-form-text" type="text" name="link-short" id="link-short" placeholder="Shorten a link here...">
+          <input id="input-btn" class="middle-form-button" type="button" value="Shorten It!">
+        </form>
+      </div>
+
       <h2>Advanced Statistics</h2>
 
       <p>
@@ -63,7 +66,7 @@
 
       <div class="middle-info">
         <div class="line"></div>
-        <article class="article-info">
+        <article class="article-info article-info-one">
           <div class="div-img-info">
             <img class="img-info img-one" src="./images/icon-brand-recognition.svg" alt="">
           </div>
@@ -75,7 +78,7 @@
           </p>
         </article>
   
-        <article class="article-info">
+        <article class="article-info article-info-two">
           <div class="div-img-info">
             <img class="img-info img-two" src="./images/icon-detailed-records.svg" alt="">
           </div>
@@ -87,7 +90,7 @@
           </p>
         </article>
   
-        <article class="article-info">
+        <article class="article-info article-info-three">
           <div class="div-img-info">
             <img class="img-info img-three" src="./images/icon-fully-customizable.svg" alt="">
           </div>
@@ -108,36 +111,38 @@
     </section>
   </main>
   <footer>
-    <div>
-      <img src="./images/logo.svg" alt="" class="logo">
+    <div class="div-logo-footer">
+      <img src="./images/logo.svg" alt="" class="logo-footer">
     </div>
-    <div>
-      <h5>Features</h5>
-      
-      <ul>
-        <li><a href="">Link Shortening</a></li>
-        <li><a href="">Branded Links</a></li>
-        <li><a href="">Analytics</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Resources</h5>
-
-      <ul>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Developers</a></li>
-        <li><a href="">Support</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Company</h5>
-
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Our Team</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+    <div class="content-footer-menu">
+      <div class="footer-menu">
+        <h5>Features</h5>
+        
+        <ul>
+          <li><a href="">Link Shortening</a></li>
+          <li><a href="">Branded Links</a></li>
+          <li><a href="">Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <h5>Resources</h5>
+  
+        <ul>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Developers</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <h5>Company</h5>
+  
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class="social-icons">
       <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"></a>
@@ -151,5 +156,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/shortening.js"></script>
 </body>
 </html>

@@ -89,6 +89,7 @@ header nav ul .sign-up {
 .middle-content {
   background-color: rgb(191, 191, 191);
   position: relative;
+  padding-bottom: 7rem;
 }
 .middle-content .middle-form {
   display: flex;
@@ -177,6 +178,14 @@ header nav ul .sign-up {
   color: rgb(53, 50, 62);
   font-size: 1rem;
 }
+.middle-content .middle-info .article-info-one {
+  top: -4rem;
+  left: 0;
+}
+.middle-content .middle-info .article-info-three {
+  top: 4rem;
+  left: 0;
+}
 
 .foot-section {
   background-color: rgb(59, 48, 84);
@@ -209,6 +218,48 @@ header nav ul .sign-up {
 
 footer {
   background-color: rgb(35, 33, 39);
+  padding: 4rem 0 8rem 7.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .div-logo-footer {
+  display: flex;
+  align-items: flex-start;
+}
+footer .div-logo-footer .logo-footer {
+  padding-right: 3rem;
+  filter: invert(100%);
+}
+footer .content-footer-menu {
+  display: flex;
+}
+footer .content-footer-menu .footer-menu {
+  margin: 0 0 0 5rem;
+}
+footer .content-footer-menu .footer-menu h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+footer .content-footer-menu .footer-menu ul {
+  list-style: none;
+}
+footer .content-footer-menu .footer-menu ul li {
+  padding-bottom: 0.5rem;
+}
+footer .content-footer-menu .footer-menu ul a {
+  text-decoration: none;
+  color: rgb(158, 154, 167);
+  font-size: 1rem;
+}
+footer .content-footer-menu .footer-menu ul a:hover {
+  color: rgb(42, 207, 207);
+}
+footer .social-icons {
+  margin: 0 10% 0 5%;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .attribution {

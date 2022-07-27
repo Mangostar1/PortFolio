@@ -84,6 +84,7 @@ header
 .middle-content
     background-color: $neutral-Gray
     position: relative
+    padding-bottom: 7rem
     .middle-form
         display: flex
         justify-content: center
@@ -158,6 +159,13 @@ header
                 text-align: left
                 color: $neutral-DarkB
                 font-size: 1rem
+        .article-info-one
+            top: -4rem
+            left: 0
+        .article-info-three
+            top: 4rem
+            left: 0
+
 
 .foot-section
     background-color: $primary-2
@@ -186,6 +194,38 @@ header
 
 footer
     background-color: $neutral-DarkV
+    padding: 4rem 0 8rem 7.5rem
+    display: flex
+    justify-content: space-between
+    .div-logo-footer
+        display: flex
+        align-items: flex-start
+        .logo-footer
+            padding-right: 3rem
+            filter: invert(100%)
+    .content-footer-menu
+        display: flex
+        .footer-menu
+            margin: 0 0 0 5rem
+            h5
+                color: $white
+                font-size: 1.1rem
+                font-weight: bold
+                padding-bottom: 1rem
+            ul
+                list-style: none
+                li
+                    padding-bottom: .5rem
+                a
+                    text-decoration: none
+                    color: $neutral-GrayishV
+                    font-size: 1rem
+                    &:hover
+                        color: $primary-1
+    .social-icons
+        margin: 0 10% 0 5%
+        display: flex
+        gap: 1.5rem
 
 .attribution
     background-color: #ffffff
