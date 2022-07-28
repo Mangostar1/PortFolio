@@ -10,32 +10,40 @@ body {
 }
 
 header {
+  margin: 1.5em 3rem 0 7.5rem;
+  /* display: flex */
+}
+header .menuIcon, header .logo-heaer-mobile {
+  display: none;
+}
+header .menu-content {
   display: flex;
   justify-content: space-between;
-  margin: 1.5em 3rem 0 7.5rem;
 }
-header .first-content {
+header .menu-content .first-content {
   display: flex;
   gap: 2rem;
 }
-header nav {
+header .menu-content nav {
   display: flex;
+  align-items: flex-start;
 }
-header nav ul {
+header .menu-content nav ul {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   align-items: center;
   list-style: none;
 }
-header nav ul li a {
+header .menu-content nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(158, 154, 167);
 }
-header nav ul li a:hover {
+header .menu-content nav ul li a:hover {
   color: rgb(59, 48, 84);
 }
-header nav ul .sign-up {
+header .menu-content nav ul .sign-up {
   background-color: rgb(42, 207, 207);
   color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
@@ -75,7 +83,7 @@ header nav ul .sign-up {
   font-size: 1.1rem;
 }
 .first-content button:hover {
-  background-color: rgb(59, 48, 84);
+  background-color: rgb(108, 207, 207);
   cursor: pointer;
 }
 .first-content .content-img {
@@ -102,6 +110,7 @@ header nav ul .sign-up {
 }
 .middle-content .div-middle-form .middle-form {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   background-image: url("./../images/bg-shorten-desktop.svg");
   background-repeat: no-repeat;
@@ -113,7 +122,7 @@ header nav ul .sign-up {
 }
 .middle-content .div-middle-form .middle-form .middle-form-text {
   padding: 1rem 2rem 1rem 2rem;
-  width: 100%;
+  width: 80%;
   border-radius: 6px;
   border: none;
 }
@@ -127,17 +136,15 @@ header nav ul .sign-up {
   font-size: 1.1rem;
 }
 .middle-content .div-middle-form .middle-form .middle-form-button:hover {
-  background-color: rgb(59, 48, 84);
+  background-color: rgb(108, 207, 207);
   cursor: pointer;
 }
 .middle-content .div-middle-form .middle-form #error-link {
   color: red;
+  display: inline;
+  padding-top: 0.5rem;
   font-size: 0.8rem;
-  display: block;
   opacity: 0;
-  position: absolute;
-  top: 65%;
-  left: 6rem;
 }
 .middle-content .div-middle-form .newLinkShorten {
   background-color: rgb(255, 255, 255);
@@ -151,6 +158,10 @@ header nav ul .sign-up {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+.middle-content .div-middle-form .newLinkShorten .linkShort #shorten {
+  color: rgb(42, 207, 207);
+  font-weight: bold;
 }
 .middle-content .div-middle-form .newLinkShorten .linkShort button {
   background-color: rgb(42, 207, 207);
@@ -168,7 +179,7 @@ header nav ul .sign-up {
   text-align: center;
   padding-top: 10rem;
 }
-.middle-content p {
+.middle-content .p-advanced {
   text-align: center;
   color: rgb(0, 0, 0);
   padding-top: 0.8rem;
@@ -252,7 +263,7 @@ header nav ul .sign-up {
   margin: 1.5rem 45% 0 45%;
 }
 .foot-section button:hover {
-  background-color: rgb(59, 48, 84);
+  background-color: rgb(108, 207, 207);
   cursor: pointer;
 }
 
@@ -313,6 +324,82 @@ footer .social-icons img:hover {
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    margin: 1.5em 0 0 0.5rem;
+  }
+  header .logo-heaer-mobile {
+    display: block;
+  }
+  header .menuIcon {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+  header .menu-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(59, 48, 84);
+    position: absolute;
+    top: 5.5rem;
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+  header .menu-content .first-content {
+    display: flex;
+    gap: 2rem;
+  }
+  header .menu-content .logo-heaer {
+    display: none;
+  }
+  header .menu-content nav {
+    display: flex;
+    align-items: flex-start;
+  }
+  header .menu-content nav ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+  }
+  header .menu-content nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(158, 154, 167);
+  }
+  header .menu-content nav ul li a:hover {
+    color: rgb(59, 48, 84);
+  }
+  header .menu-content nav ul .sign-up {
+    background-color: rgb(42, 207, 207);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  .first-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 8rem;
+  }
+  .first-content h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(59, 48, 84);
+    margin: 0 0.5rem;
+  }
+  .first-content p {
+    font-size: 1rem;
+    text-align: left;
+    color: rgb(158, 154, 167);
+    margin: 0 0 0 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

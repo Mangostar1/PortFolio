@@ -18,7 +18,7 @@ async function fetchApi() {
         newDiv.classList.add('newLinkShorten');
         newDiv.innerHTML = 
         `<div class="linkTo">
-            <p>
+            <p id="oldLink">
                 ${url}
             </p>
         </div>

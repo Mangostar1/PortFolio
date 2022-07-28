@@ -1,4 +1,5 @@
 $primary-1: rgb(42, 207, 207)
+$primary-1-hover: rgb(108, 207, 207)
 $primary-2: rgb(59, 48, 84)
 $secundary: rgb(244, 98, 98)
 $neutral-Gray: rgb(191, 191, 191)
@@ -19,31 +20,36 @@ body
     font-size: 18px
 
 header
-    display: flex
-    justify-content: space-between
     margin: 1.5em 3rem 0 7.5rem
-    .first-content
+    /* display: flex */
+    .menuIcon, .logo-heaer-mobile
+        display: none
+    .menu-content
         display: flex
-        gap: 2rem
-
-    nav
-        display: flex
-        ul
+        justify-content: space-between
+        .first-content
             display: flex
-            gap: 1rem
-            align-items: center
-            list-style: none
-            li a
-                text-decoration: none
-                font-weight: bold
-                color: $neutral-GrayishV
-                &:hover
-                    color: $primary-2
-            .sign-up
-                background-color: $primary-1
-                color: $white
-                padding: 0.5rem 1rem
-                border-radius: 20px
+            gap: 2rem
+        nav
+            display: flex
+            align-items: flex-start
+            ul
+                display: flex
+                flex-direction: row
+                gap: 1rem
+                align-items: center
+                list-style: none
+                li a
+                    text-decoration: none
+                    font-weight: bold
+                    color: $neutral-GrayishV
+                    &:hover
+                        color: $primary-2
+                .sign-up
+                    background-color: $primary-1
+                    color: $white
+                    padding: 0.5rem 1rem
+                    border-radius: 20px
 
 .first-content
     display: grid
@@ -73,7 +79,7 @@ header
         border: none
         font-size: 1.1rem
         &:hover
-            background-color: $primary-2
+            background-color: $primary-1-hover
             cursor: pointer
     .content-img
         overflow: hidden
@@ -95,6 +101,7 @@ header
         gap: 1rem
         .middle-form
             display: flex
+            flex-flow: row wrap
             justify-content: center
             background-image: url('./../images/bg-shorten-desktop.svg')
             background-repeat: no-repeat
@@ -105,7 +112,7 @@ header
             border-radius: 8px
             .middle-form-text
                 padding: 1rem 2rem 1rem 2rem
-                width: 100%
+                width: 80%
                 border-radius: 6px
                 border: none
             .middle-form-button
@@ -117,16 +124,14 @@ header
                 border: none
                 font-size: 1.1rem
                 &:hover
-                    background-color: $primary-2
+                    background-color: $primary-1-hover
                     cursor: pointer
             #error-link
                 color: red
+                display: inline
+                padding-top: 0.5rem
                 font-size: 0.8rem
-                display: block
                 opacity: 0
-                position: absolute
-                top: 65%
-                left: 6rem
         .newLinkShorten
             background-color: $white
             padding: 2rem 3rem 2rem 3rem
@@ -138,6 +143,9 @@ header
                 display: flex
                 flex-direction: row
                 gap: 1rem
+                #shorten
+                    color: $primary-1
+                    font-weight: bold
                 button
                     background-color: $primary-1
                     color: $white
@@ -151,7 +159,7 @@ header
     h2
         text-align: center
         padding-top: 10rem
-    p
+    .p-advanced
         text-align: center
         color: $black
         padding-top: .8rem
@@ -223,7 +231,7 @@ header
         font-size: 1.1rem
         margin: 1.5rem 45% 0 45%
         &:hover
-            background-color: $primary-2
+            background-color: $primary-1-hover
             cursor: pointer
 
 footer
@@ -270,3 +278,67 @@ footer
     text-align: center
     a
         color: hsl(228, 45%, 44%)
+
+@media screen and (max-width: 768px)
+
+    header
+        margin: 1.5em 0 0 .5rem
+        .logo-heaer-mobile
+            display: block
+        .menuIcon
+            display: block
+            position: absolute
+            top: 1.5rem
+            right: 1.5rem
+            cursor: pointer
+        .menu-content
+            display: flex
+            justify-content: space-between
+            background-color: $primary-2
+            position: absolute
+            top: 5.5rem
+            right: 1.5rem
+            left: 1.5rem
+            .first-content
+                display: flex
+                gap: 2rem
+            .logo-heaer
+                display: none
+            nav
+                display: flex
+                align-items: flex-start
+                ul
+                    display: flex
+                    gap: 1rem
+                    align-items: center
+                    list-style: none
+                    li a
+                        text-decoration: none
+                        font-weight: bold
+                        color: $neutral-GrayishV
+                        &:hover
+                            color: $primary-2
+                    .sign-up
+                        background-color: $primary-1
+                        color: $white
+                        padding: 0.5rem 1rem
+                        border-radius: 20px
+
+
+    .first-content
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+        padding-bottom: 8rem
+        h1
+            font-size: 1.5rem
+            font-weight: bold
+            line-height: 1.2
+            text-align: center
+            color: $primary-2
+            margin: 0 .5rem
+        p
+            font-size: 1rem
+            text-align: left
+            color: $neutral-GrayishV
+            margin: 0 0 0 .5rem
