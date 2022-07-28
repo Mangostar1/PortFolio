@@ -49,6 +49,10 @@ header .menu-content nav ul .sign-up {
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
+header .menu-content nav ul .sign-up:hover {
+  background-color: rgb(108, 207, 207);
+  color: rgb(255, 255, 255);
+}
 
 .first-content {
   display: grid;
@@ -342,63 +346,236 @@ footer .social-icons img:hover {
   }
   header .menu-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: rgb(59, 48, 84);
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 10px;
     position: absolute;
     top: 5.5rem;
     right: 1.5rem;
     left: 1.5rem;
+    opacity: 0;
   }
-  header .menu-content .first-content {
+  header .show {
+    opacity: 1;
+  }
+  header .show .first-content {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 0rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(191, 191, 191);
   }
-  header .menu-content .logo-heaer {
+  header .show .logo-heaer {
     display: none;
   }
-  header .menu-content nav {
+  header .show .second-content {
+    padding-top: 1rem;
+  }
+  header .show nav {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
-  header .menu-content nav ul {
+  header .show nav ul {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     align-items: center;
     list-style: none;
   }
-  header .menu-content nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(158, 154, 167);
-  }
-  header .menu-content nav ul li a:hover {
-    color: rgb(59, 48, 84);
-  }
-  header .menu-content nav ul .sign-up {
-    background-color: rgb(42, 207, 207);
+  header .show nav ul li a {
     color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
+  }
+  header .show nav ul li a:hover {
+    color: rgb(42, 207, 207);
+  }
+  header .show nav ul .sign-up {
+    padding: 0.5rem 6rem;
     border-radius: 20px;
   }
   .first-content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-bottom: 8rem;
+    grid-template-rows: auto auto;
+  }
+  .first-content .first-text {
+    margin-top: 0;
   }
   .first-content h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 1.2;
     text-align: center;
-    color: rgb(59, 48, 84);
-    margin: 0 0.5rem;
+    margin: 2.5rem 1rem 0 1rem;
   }
   .first-content p {
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.3rem;
+    text-align: center;
     color: rgb(158, 154, 167);
-    margin: 0 0 0 0.5rem;
+    margin: 0;
+  }
+  .first-content button {
+    margin: 1.5rem 0 0 7.5rem;
+    background-color: rgb(42, 207, 207);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .first-content button:hover {
+    background-color: rgb(108, 207, 207);
+    cursor: pointer;
+  }
+  .first-content .content-img {
+    overflow: hidden;
+    grid-row: 1/2;
+  }
+  .first-content .content-img .img-content {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 4rem;
+  }
+  .middle-content {
+    position: relative;
+    padding-bottom: 7rem;
+  }
+  .middle-content .div-middle-form {
+    position: absolute;
+    top: -4.5rem;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .middle-content .div-middle-form .middle-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-image: url("./../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2.8rem 3rem 2.8rem 3rem;
+  }
+  .middle-content .div-middle-form .middle-form .middle-form-text {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 80%;
+    border-radius: 6px;
+    border: none;
+  }
+  .middle-content .div-middle-form .middle-form .middle-form-button {
+    background-color: rgb(42, 207, 207);
+    color: rgb(255, 255, 255);
+    padding: 0.4rem 5rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .middle-content .div-middle-form .middle-form .middle-form-button:hover {
+    background-color: rgb(108, 207, 207);
+    cursor: pointer;
+  }
+  .middle-content .div-middle-form .middle-form #error-link {
+    color: red;
+    display: inline;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0;
+  }
+  .middle-content .div-middle-form .newLinkShorten {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem 2rem 3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .middle-content .div-middle-form .newLinkShorten .linkShort {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .middle-content .div-middle-form .newLinkShorten .linkShort #shorten {
+    color: rgb(42, 207, 207);
+    font-weight: bold;
+  }
+  .middle-content .div-middle-form .newLinkShorten .linkShort button {
+    background-color: rgb(42, 207, 207);
+    color: rgb(255, 255, 255);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .middle-content .div-middle-form .newLinkShorten .linkShort button:hover {
+    background-color: rgb(59, 48, 84);
+    cursor: pointer;
+  }
+  .middle-content h2 {
+    text-align: center;
+    padding-top: 10rem;
+  }
+  .middle-content .p-advanced {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 0.8rem;
+    font-size: 1rem;
+  }
+  .middle-content .middle-info {
+    margin: 10rem 1.4rem 0 1.4rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .middle-content .middle-info .line {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    border: 5px solid rgb(42, 207, 207);
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+  }
+  .middle-content .middle-info .article-info {
+    background-color: rgb(255, 255, 255);
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .middle-content .middle-info .article-info .div-img-info {
+    background-color: rgb(59, 48, 84);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5rem;
+    left: 5%;
+  }
+  .middle-content .middle-info .article-info .div-img-info .img-info {
+    padding: 1rem 1rem;
+  }
+  .middle-content .middle-info .article-info .div-img-info .img-one, .middle-content .middle-info .article-info .div-img-info .img-two {
+    padding: 1.2rem 1.15rem;
+  }
+  .middle-content .middle-info .article-info p {
+    text-align: left;
+    color: rgb(53, 50, 62);
+    font-size: 1rem;
+  }
+  .middle-content .middle-info .article-info-one {
+    top: -4rem;
+    left: 0;
+  }
+  .middle-content .middle-info .article-info-three {
+    top: 4rem;
+    left: 0;
   }
 }
 
