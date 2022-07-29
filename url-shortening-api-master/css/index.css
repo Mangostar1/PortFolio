@@ -438,7 +438,7 @@ footer .social-icons img:hover {
   }
   .middle-content {
     position: relative;
-    padding-bottom: 7rem;
+    padding-bottom: 3rem;
   }
   .middle-content .div-middle-form {
     position: absolute;
@@ -454,30 +454,24 @@ footer .social-icons img:hover {
     flex-flow: row wrap;
     justify-content: center;
     gap: 1rem;
-    background-image: url("./../images/bg-shorten-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2.8rem 3rem 2.8rem 3rem;
+    background-image: url("./../images/bg-shorten-mobile.svg");
+    background-position: 80px 0;
+    padding: 1.5rem;
   }
   .middle-content .div-middle-form .middle-form .middle-form-text {
-    padding: 1rem 2rem 1rem 2rem;
-    width: 80%;
+    padding: 1rem 2rem;
+    width: 100%;
     border-radius: 6px;
     border: none;
   }
   .middle-content .div-middle-form .middle-form .middle-form-button {
     background-color: rgb(42, 207, 207);
     color: rgb(255, 255, 255);
-    padding: 0.4rem 5rem;
-    margin-left: 1rem;
+    padding: 0.4rem 6.7rem;
+    margin-left: 0;
     border-radius: 6px;
     border: none;
     font-size: 1.1rem;
-  }
-  .middle-content .div-middle-form .middle-form .middle-form-button:hover {
-    background-color: rgb(108, 207, 207);
-    cursor: pointer;
   }
   .middle-content .div-middle-form .middle-form #error-link {
     color: red;
@@ -487,16 +481,18 @@ footer .social-icons img:hover {
     opacity: 0;
   }
   .middle-content .div-middle-form .newLinkShorten {
-    background-color: rgb(255, 255, 255);
     padding: 2rem 3rem 2rem 3rem;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+  }
+  .middle-content .div-middle-form .newLinkShorten #oldLink {
+    font-size: 1rem;
   }
   .middle-content .div-middle-form .newLinkShorten .linkShort {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
   }
   .middle-content .div-middle-form .newLinkShorten .linkShort #shorten {
@@ -515,14 +511,8 @@ footer .social-icons img:hover {
     background-color: rgb(59, 48, 84);
     cursor: pointer;
   }
-  .middle-content h2 {
-    text-align: center;
-    padding-top: 10rem;
-  }
   .middle-content .p-advanced {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding-top: 0.8rem;
+    padding: 0.8rem 0.8rem 0 0.8rem;
     font-size: 1rem;
   }
   .middle-content .middle-info {
@@ -535,22 +525,19 @@ footer .social-icons img:hover {
     position: relative;
   }
   .middle-content .middle-info .line {
-    display: flex;
-    width: 100%;
-    height: 1px;
-    border: 5px solid rgb(42, 207, 207);
+    width: 600px;
     position: absolute;
-    top: 35%;
+    top: 50%;
+    left: -40%;
     z-index: 1;
+    transform: rotate(90deg);
   }
   .middle-content .middle-info .article-info {
-    background-color: rgb(255, 255, 255);
     padding: 5rem 1.5rem 2rem 1.5rem;
     position: relative;
     z-index: 2;
   }
   .middle-content .middle-info .article-info .div-img-info {
-    background-color: rgb(59, 48, 84);
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -564,18 +551,72 @@ footer .social-icons img:hover {
   .middle-content .middle-info .article-info .div-img-info .img-one, .middle-content .middle-info .article-info .div-img-info .img-two {
     padding: 1.2rem 1.15rem;
   }
-  .middle-content .middle-info .article-info p {
-    text-align: left;
-    color: rgb(53, 50, 62);
+  .middle-content .middle-info .article-info p, .middle-content .middle-info .article-info h3 {
+    text-align: center;
+  }
+  .foot-section {
+    background-image: url("./../images/bg-boost-mobile.svg");
+    padding: 2rem 0 2rem 0;
+  }
+  .foot-section h3 {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+  .foot-section button {
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin: 1.5rem 15% 0 35%;
+  }
+  footer {
+    background-color: rgb(35, 33, 39);
+    padding: 4rem 0 8rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .div-logo-footer {
+    display: flex;
+    align-items: flex-start;
+  }
+  footer .div-logo-footer .logo-footer {
+    padding-right: 3rem;
+    filter: invert(100%);
+  }
+  footer .content-footer-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .content-footer-menu .footer-menu {
+    margin: 0 0 0 5rem;
+  }
+  footer .content-footer-menu .footer-menu h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  footer .content-footer-menu .footer-menu ul {
+    list-style: none;
+  }
+  footer .content-footer-menu .footer-menu ul li {
+    padding-bottom: 0.5rem;
+  }
+  footer .content-footer-menu .footer-menu ul a {
+    text-decoration: none;
+    color: rgb(158, 154, 167);
     font-size: 1rem;
   }
-  .middle-content .middle-info .article-info-one {
-    top: -4rem;
-    left: 0;
+  footer .content-footer-menu .footer-menu ul a:hover {
+    color: rgb(42, 207, 207);
   }
-  .middle-content .middle-info .article-info-three {
-    top: 4rem;
-    left: 0;
+  footer .social-icons {
+    margin: 0 10% 0 5%;
+    display: flex;
+    gap: 1.5rem;
+  }
+  footer .social-icons img:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(60%) saturate(5159%) hue-rotate(123deg) brightness(88%) contrast(83%);
   }
 }
 

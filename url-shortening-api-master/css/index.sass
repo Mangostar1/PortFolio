@@ -372,7 +372,7 @@ footer
 
     .middle-content
         position: relative
-        padding-bottom: 7rem
+        padding-bottom: 3rem
         .div-middle-form
             position: absolute
             top: -4.5rem
@@ -386,27 +386,22 @@ footer
                 flex-flow: row wrap
                 justify-content: center
                 gap: 1rem
-                background-image: url('./../images/bg-shorten-desktop.svg')
-                background-repeat: no-repeat
-                background-position: center
-                background-size: cover
-                padding: 2.8rem 3rem 2.8rem 3rem
+                background-image: url('./../images/bg-shorten-mobile.svg')
+                background-position: 80px 0
+                padding: 1.5rem
                 .middle-form-text
-                    padding: 1rem 2rem 1rem 2rem
-                    width: 80%
+                    padding: 1rem 2rem
+                    width: 100%
                     border-radius: 6px
                     border: none
                 .middle-form-button
                     background-color: $primary-1
                     color: $white
-                    padding: 0.4rem 5rem
-                    margin-left: 1rem
+                    padding: 0.4rem 6.7rem
+                    margin-left: 0
                     border-radius: 6px
                     border: none
                     font-size: 1.1rem
-                    &:hover
-                        background-color: $primary-1-hover
-                        cursor: pointer
                 #error-link
                     color: red
                     display: inline
@@ -414,15 +409,16 @@ footer
                     font-size: 0.8rem
                     opacity: 0
             .newLinkShorten
-                background-color: $white
                 padding: 2rem 3rem 2rem 3rem
                 border-radius: 5px
                 display: flex
-                justify-content: space-between
+                flex-direction: column
                 align-items: center
+                #oldLink
+                    font-size: 1rem
                 .linkShort
                     display: flex
-                    flex-direction: row
+                    flex-direction: column
                     gap: 1rem
                     #shorten
                         color: $primary-1
@@ -437,13 +433,8 @@ footer
                         &:hover
                             background-color: $primary-2
                             cursor: pointer
-        h2
-            text-align: center
-            padding-top: 10rem
         .p-advanced
-            text-align: center
-            color: $black
-            padding-top: .8rem
+            padding: .8rem .8rem 0 .8rem
             font-size: 1rem
         .middle-info
             margin: 10rem 1.4rem 0 1.4rem
@@ -454,20 +445,17 @@ footer
             gap: 1.5rem
             position: relative
             .line
-                display: flex
-                width: 100%
-                height: 1px
-                border: 5px solid $primary-1
+                width: 600px
                 position: absolute
-                top: 35%
+                top: 50%
+                left: -40%
                 z-index: 1
+                transform: rotate(90deg)
             .article-info
-                background-color: $white
                 padding: 5rem 1.5rem 2rem 1.5rem
                 position: relative
                 z-index: 2
                 .div-img-info
-                    background-color: $primary-2
                     width: 5rem
                     height: 5rem
                     border-radius: 50%
@@ -478,13 +466,56 @@ footer
                         padding: 1rem 1rem
                     .img-one, .img-two
                         padding: 1.2rem 1.15rem
-                p
-                    text-align: left
-                    color: $neutral-DarkB
-                    font-size: 1rem
-            .article-info-one
-                top: -4rem
-                left: 0
-            .article-info-three
-                top: 4rem
-                left: 0
+                p, h3
+                    text-align: center
+
+    .foot-section
+        background-image: url('./../images/bg-boost-mobile.svg')
+        padding: 2rem 0 2rem 0
+        h3
+            font-size: 1.7rem
+            margin-top: 2rem
+        button
+            border-radius: 30px
+            padding: 1rem 2rem
+            margin: 1.5rem 15% 0 35%
+
+    footer
+        background-color: $neutral-DarkV
+        padding: 4rem 0 8rem 7.5rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .div-logo-footer
+            display: flex
+            align-items: flex-start
+            .logo-footer
+                padding-right: 3rem
+                filter: invert(100%)
+        .content-footer-menu
+            display: flex
+            flex-direction: column
+            .footer-menu
+                margin: 0 0 0 5rem
+                h5
+                    color: $white
+                    font-size: 1.1rem
+                    font-weight: bold
+                    padding-bottom: 1rem
+                ul
+                    list-style: none
+                    li
+                        padding-bottom: .5rem
+                    a
+                        text-decoration: none
+                        color: $neutral-GrayishV
+                        font-size: 1rem
+                        &:hover
+                            color: $primary-1
+        .social-icons
+            margin: 0 10% 0 5%
+            display: flex
+            gap: 1.5rem
+            img:hover
+                cursor: pointer
+                filter: brightness(0) saturate(100%) invert(92%) sepia(60%) saturate(5159%) hue-rotate(123deg) brightness(88%) contrast(83%)
