@@ -21,7 +21,6 @@ body
 
 header
     margin: 1.5em 3rem 0 7.5rem
-    /* display: flex */
     .menuIcon, .logo-heaer-mobile
         display: none
     .menu-content
@@ -295,8 +294,7 @@ footer
             right: 1.5rem
             cursor: pointer
         .menu-content
-            display: flex
-            flex-direction: column
+            display: none
             background-color: $primary-2
             padding: 2rem 1rem 2rem 1rem
             border-radius: 10px
@@ -304,9 +302,9 @@ footer
             top: 5.5rem
             right: 1.5rem
             left: 1.5rem
-            opacity: 0
         .show
-            opacity: 1
+            display: flex
+            flex-direction: column
             .first-content
                 display: flex
                 justify-content: center
@@ -478,25 +476,29 @@ footer
         button
             border-radius: 30px
             padding: 1rem 2rem
-            margin: 1.5rem 15% 0 35%
+            margin: 1.5rem 0 0 7rem
 
     footer
         background-color: $neutral-DarkV
-        padding: 4rem 0 8rem 7.5rem
+        padding: 6rem 25%
         display: flex
         flex-direction: column
         justify-content: space-between
         .div-logo-footer
             display: flex
             align-items: flex-start
+            justify-content: center
             .logo-footer
-                padding-right: 3rem
+                padding-right: 0
                 filter: invert(100%)
         .content-footer-menu
             display: flex
             flex-direction: column
+            margin-top: 4rem
+            margin-bottom: 2rem
             .footer-menu
-                margin: 0 0 0 5rem
+                margin: 0
+                text-align: center
                 h5
                     color: $white
                     font-size: 1.1rem
