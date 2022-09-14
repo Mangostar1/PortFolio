@@ -57,7 +57,7 @@ header .menu-content nav ul .sign-up:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  padding-bottom: 8rem;
+  padding-bottom: 0rem;
 }
 .first-content .first-text {
   margin-top: 9rem;
